@@ -1,0 +1,52 @@
+name: 🐛 Bug Report
+description: Something in SNAKE NEON isn't working right
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the game
+        2. Press Start
+        3. …
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Gameplay (movement / collision / scoring)
+        - Power-ups / combo
+        - UI / menus / HUD
+        - Audio
+        - Mobile / touch controls
+        - Performance
+        - Persistence (high scores / settings)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: Browser & device
+      placeholder: e.g. Chrome 131, Windows 11 · Safari, iPhone 15
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (if any)
+      description: Open DevTools → Console and paste any red errors.
+      render: text
