@@ -1,0 +1,34 @@
+name: ✨ Feature Request
+description: Suggest an idea for SNAKE NEON
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should the game do? Why would it make it better?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Gameplay mechanics
+        - Visual effects
+        - Audio / music
+        - UI / menus
+        - Mobile experience
+        - Accessibility
+        - Social / leaderboard
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other ways to achieve the same thing?
